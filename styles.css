@@ -768,3 +768,71 @@ body.modo-oscuro .proyectos .grid img:hover {
         transform: rotate(20deg);
     }
 }
+/* Cambiar el tamaño de la cabecera en pantallas móviles pequeñas */
+@media (max-width: 480px) {
+    .header {
+        padding: 0.5rem 0.5rem;
+        flex-direction: column;
+        text-align: center;
+        height: auto; /* Dejar que el encabezado se ajuste al contenido */
+    }
+    
+    .header h1 {
+        font-size: 1.2rem;
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center; /* Centrar los enlaces */
+    }
+
+    .navegacion a {
+        font-size: 0.85rem; /* Reducir el tamaño de los enlaces */
+        padding: 0.5rem; /* Aumentar el tamaño de los enlaces para ser más fáciles de tocar */
+    }
+}
+
+/* Ajuste para imágenes en la sección de perfil */
+@media (max-width: 480px) {
+    .imagen-perfil {
+        width: 120px; /* Reducir el tamaño de la imagen */
+        height: 120px;
+    }
+    .grid img {
+        width: 100%;
+        height: auto; /* Hacer que las imágenes se ajusten mejor en pantallas pequeñas */
+    }
+}
+
+/* Ajustes para las secciones */
+@media (max-width: 480px) {
+    section {
+        padding: 1.5rem;
+    }
+    
+    .sobre-mi {
+        margin: 1rem;
+    }
+    
+    .slider img {
+        width: 150px;
+        height: 100px; /* Hacer que las imágenes del slider se ajusten mejor */
+    }
+}
+
+/* Mejorar la disposición del footer para pantallas pequeñas */
+@media (max-width: 480px) {
+    .footer {
+        padding: 0.5rem;
+        text-align: center;
+    }
+    
+    .redes-sociales {
+        gap: 15px;
+    }
+    
+    .redes-sociales__boton {
+        padding: 8px 15px;
+    }
+}
