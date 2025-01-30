@@ -860,6 +860,7 @@ body.modo-oscuro .proyectos .grid img:hover {
 }
 #toggleButton {
     background: none;
+    color: white;
     border: none;
     font-size: 2rem;
     cursor: pointer;

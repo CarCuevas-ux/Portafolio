@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, {
-        threshold: 0.5
+        threshold: 0.3
     });
 
     // Observar cada sección con la clase 'fade-in'
