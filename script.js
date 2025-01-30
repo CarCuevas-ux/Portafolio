@@ -43,3 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Inicializar el estado del modo oscuro al cargar la página
     initializeDarkMode();
 });
+document.getElementById('toggleButton').addEventListener('click', function() {
+    var header = document.querySelector('header');
+    var icon = document.getElementById('toggleIcon');
+    
+    // Alternar la clase 'closed' en el encabezado para cambiar el ícono
+    header.classList.toggle('closed');
+    
+    // Alternar la visibilidad del encabezado
+    var nav = document.querySelector('.navegacion');
+    nav.style.display = (nav.style.display === 'none') ? 'block' : 'none';
+});

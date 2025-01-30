@@ -96,6 +96,8 @@ body.modo-oscuro h6 {
     transition: background 0.5s ease, color 0.5s ease;
     height: 80px; /* Altura del encabezado */
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+    transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
 }
 /* Estilo para los elementos dentro del encabezado */
 /* Títulos dentro del encabezado */
@@ -131,6 +133,14 @@ body.modo-oscuro h6 {
         justify-content: center;
     }
 }
+header.hidden {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
 
 /* Navegación */
 .navegacion a {
@@ -842,5 +852,38 @@ body.modo-oscuro .proyectos .grid img:hover {
     
     .redes-sociales__boton {
         padding: 8px 15px;
+    }
+}
+
+#navMenu.hidden {
+    display: none;
+}
+#toggleButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+#toggleIcon {
+    transition: transform 0.3s ease; /* Suaviza la rotación */
+}
+
+/* Estado cuando el encabezado está cerrado */
+.header.closed #toggleIcon {
+    transform: rotate(180deg); /* Gira el ícono 90 grados */
+}
+
+/* Aquí podrías agregar más estilo para tu botón si lo deseas */
+@media (max-width: 768px) {
+    #ciberseguridad {
+        display: block; /* Asegura que la sección se muestre */
+        padding: 20px; /* Agrega algo de relleno si es necesario */
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* O ajusta el número de columnas si es necesario */
     }
 }
