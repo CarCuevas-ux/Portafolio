@@ -888,3 +888,6 @@ body.modo-oscuro .proyectos .grid img:hover {
         grid-template-columns: 1fr 1fr; /* O ajusta el número de columnas si es necesario */
     }
 }
+#proyectos {
+    display: none;
+}
